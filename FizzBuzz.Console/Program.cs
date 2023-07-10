@@ -9,13 +9,13 @@ while (true)
 {
     Console.Write("Enter the range start number: ");
     var rangeStartInput = Console.ReadLine();
-    if (int.TryParse(rangeStartInput, out rangeStartNumber))
+    if (int.TryParse(rangeStartInput, out rangeStartNumber) && rangeStartNumber >= 1 && rangeStartNumber <= 100)
     {
         break;
     }
     else
     {
-        Console.WriteLine("Invalid start number. Please enter a valid integer.");
+        Console.WriteLine("Invalid start number. Please enter a valid integer between 1 and 100.");
     }
 }
 
@@ -23,13 +23,13 @@ while (true)
 {
     Console.Write("Enter the range end number: ");
     var rangeEndInput = Console.ReadLine();
-    if (int.TryParse(rangeEndInput, out rangeEndNumber))
+    if (int.TryParse(rangeEndInput, out rangeEndNumber) && rangeEndNumber >= 1 && rangeEndNumber <= 100)
     {
         break;
     }
     else
     {
-        Console.WriteLine("Invalid end number. Please enter a valid integer.");
+        Console.WriteLine("Invalid end number. Please enter a valid integer. Please enter a valid integer between 1 and 100.");
     }
 }
 
