@@ -2,7 +2,7 @@
 {
     public class FizzBuzzRuleTests : IFizzBuzzRuleTest
     {
-        readonly FizzBuzzRule _fizzBuzzRule;
+        private readonly FizzBuzzRule _fizzBuzzRule;
         public FizzBuzzRuleTests()
         {
             _fizzBuzzRule = new FizzBuzzRule();

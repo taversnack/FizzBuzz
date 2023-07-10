@@ -19,7 +19,7 @@ namespace FizzBuzz.Console.Types
         public List<string> GetRangeOutput()
         {
             List<string> rangeOutput = new List<string>();
-            for (int number = RangeStartNumber; number <= RangeEndNumber; number++)
+            for (var number = RangeStartNumber; number <= RangeEndNumber; number++)
             {
                 rangeOutput.Add(OutputByRule(number));
             }
@@ -34,11 +34,9 @@ namespace FizzBuzz.Console.Types
         {
             foreach (var rule in Rules)
             {
-                if (rule.IsMatch(number))
-                {
-                    string output = rule.GetOutput();
-                    return output == "" ? number.ToString() : output;
-                }
+                if (!rule.IsMatch(number)) continue;
+                var output = rule.GetOutput();
+                return output == "" ? number.ToString() : output;
             }
 
             return "";

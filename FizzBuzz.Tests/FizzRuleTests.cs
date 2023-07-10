@@ -2,7 +2,7 @@ namespace FizzBuzz.Tests
 {
     public class FizzRuleTests : IFizzBuzzRuleTest
     {
-        readonly FizzRule _fizzRule;
+        private readonly FizzRule _fizzRule;
         public FizzRuleTests()
         {
             _fizzRule = new FizzRule();

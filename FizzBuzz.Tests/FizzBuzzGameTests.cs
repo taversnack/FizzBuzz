@@ -4,11 +4,12 @@ namespace FizzBuzz.Tests
 {
     public class FizzBuzzGameTests
     {
-        readonly FizzBuzzGame _fizzBuzzGame;
+        private readonly FizzBuzzGame _fizzBuzzGame;
         public FizzBuzzGameTests()
         {
-            int rangeStartNumber = 1; int rangeEndNumber = 15;
-            IFizzBuzzRule[] fizzBuzzRules = new IFizzBuzzRule[] {
+            var rangeStartNumber = 1; 
+            var rangeEndNumber = 15;
+            var fizzBuzzRules = new IFizzBuzzRule[] {
                 new FizzBuzzRule(),
                 new FizzRule(),
                 new BuzzRule(),
@@ -24,7 +25,7 @@ namespace FizzBuzz.Tests
         [Fact]
         public void FizzBuzzGame_ShouldOutput_CorrectList()
         {
-            List<string> expected = new List<string>() {
+            var expected = new List<string>() {
                 "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz",
                 "11", "Fizz", "13", "14", "FizzBuzz"
             };

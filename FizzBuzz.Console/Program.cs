@@ -55,11 +55,11 @@ PrintFizzBuzzGameOutputs(fizzBuzzGameOutputs);
 static void PrintFizzBuzzGameOutputs(List<string> fizzBuzzGameOutputs)
 {
     Console.WriteLine("Game Output:");
-    for (int i = 0; i < fizzBuzzGameOutputs.Count; i++)
+    for (var i = 0; i < fizzBuzzGameOutputs.Count; i++)
     {
-        if (i != 0 && i % 5 == 0) System.Console.WriteLine();
+        if (i != 0 && i % 5 == 0) Console.WriteLine();
 
-        System.Console.Write(fizzBuzzGameOutputs[i] + " ");
+        Console.Write(fizzBuzzGameOutputs[i] + " ");
     }
 
     Console.WriteLine();

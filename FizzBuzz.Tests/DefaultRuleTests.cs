@@ -2,7 +2,7 @@ namespace FizzBuzz.Tests
 {
     public class DefaultRuleTests : IFizzBuzzRuleTest
     {
-        readonly DefaultRule _defaultDefaultRule;
+        private readonly DefaultRule _defaultDefaultRule;
         public DefaultRuleTests()
         {
             _defaultDefaultRule = new DefaultRule();
