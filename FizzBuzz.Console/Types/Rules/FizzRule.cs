@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FizzBuzz.Console.Interfaces;
+﻿using FizzBuzz.Console.Interfaces;
 
 namespace FizzBuzz.Console.Types.Rules
 {
@@ -11,7 +6,7 @@ namespace FizzBuzz.Console.Types.Rules
     {
         public bool IsMatch(int number)
         {
-            return number % Constants.BuzzDivisor == 0;
+            return number % Constants.FizzDivisor == 0;
         }
 
         public string GetOutput()

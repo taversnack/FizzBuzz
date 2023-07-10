@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FizzBuzz.Console.Interfaces;
+﻿using FizzBuzz.Console.Interfaces;
 
 namespace FizzBuzz.Console.Types.Rules
 {
