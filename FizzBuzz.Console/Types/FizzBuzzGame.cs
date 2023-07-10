@@ -1,9 +1,4 @@
 ﻿using FizzBuzz.Console.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FizzBuzz.Console.Types
 {
@@ -24,7 +19,7 @@ namespace FizzBuzz.Console.Types
         public List<string> GetRangeOutput()
         {
             List<string> rangeOutput = new List<string>();
-            for (int number = RangeStartNumber; number < RangeEndNumber; number++)
+            for (int number = RangeStartNumber; number <= RangeEndNumber; number++)
             {
                 rangeOutput.Add(OutputByRule(number));
             }
